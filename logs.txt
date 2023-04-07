@@ -1,0 +1,555 @@
+Microsoft Windows [Version 10.0.19044.1826]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\DG>mkdir
+The syntax of the command is incorrect.
+
+C:\Users\DG>cd Desktop
+
+C:\Users\DG\Desktop>mkdir SI_2023_lab1_213249
+
+C:\Users\DG\Desktop>cd SI_2023_lab1_213249
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>echo "# -SI_2023_lab1_213249" >> README.md
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git init
+Initialized empty Git repository in C:/Users/DG/Desktop/SI_2023_lab1_213249/.git/
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git add README.md
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git commit -m "first commit"
+[master (root-commit) e4a6a50] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git branch -M master
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git remote add origin https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git add .
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   SILab1.java
+
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git commit -m "Add java class"
+[master f72dc21] Add java class
+ 1 file changed, 42 insertions(+)
+ create mode 100644 SILab1.java
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 630 bytes | 630.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+   e4a6a50..f72dc21  master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git branch bug1
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git branch bug2
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git branch bug3
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug1
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>javac SILab1.java
+'javac' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>^D cmd
+'♦' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git add .
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git commit -m "Fix wrong loop for reading"
+[bug1 01b5f35] Fix wrong loop for reading
+ 6 files changed, 33 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/.name
+ create mode 100644 .idea/SI_2023_lab1_213249.iml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug1
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git add .
+warning: in the working copy of '.idea/workspace.xml', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git commit -m " Fix wrong condition in filterOddNumbers."
+[bug2 65bb8ba]  Fix wrong condition in filterOddNumbers.
+ 4 files changed, 65 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/.name
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug2
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout bug3
+Switched to branch 'bug3'
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git add .
+warning: in the working copy of '.idea/workspace.xml', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git commit -m "Fix method sumEvenNumbers.
+[bug3 6a13dfd] Fix method sumEvenNumbers.
+ 2 files changed, 59 insertions(+), 2 deletions(-)
+ create mode 100644 .idea/workspace.xml
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug3
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push origin bug1
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 1.22 KiB | 1.22 MiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/ddamjanp/-SI_2023_lab1_213249/pull/new/bug1
+remote:
+To https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+ * [new branch]      bug1 -> bug1
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug1
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push origin bug2
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.57 KiB | 1.57 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/ddamjanp/-SI_2023_lab1_213249/pull/new/bug2
+remote:
+To https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+ * [new branch]      bug2 -> bug2
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout bug3
+Switched to branch 'bug3'
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push origin bug3
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.35 KiB | 1.35 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/ddamjanp/-SI_2023_lab1_213249/pull/new/bug3
+remote:
+To https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+ * [new branch]      bug3 -> bug3
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git branch
+  bug1
+  bug2
+  bug3
+* master
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git merge bug1
+Updating f72dc21..01b5f35
+Fast-forward
+ .idea/.gitignore              | 8 ++++++++
+ .idea/.name                   | 1 +
+ .idea/SI_2023_lab1_213249.iml | 9 +++++++++
+ .idea/modules.xml             | 8 ++++++++
+ .idea/vcs.xml                 | 6 ++++++
+ SILab1.java                   | 2 +-
+ 6 files changed, 33 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/.name
+ create mode 100644 .idea/SI_2023_lab1_213249.iml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git merge bug2
+Auto-merging .idea/vcs.xml
+CONFLICT (add/add): Merge conflict in .idea/vcs.xml
+Auto-merging SILab1.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git diff
+diff --cc .idea/vcs.xml
+index 35eb1dd,94a25f7..0000000
+--- a/.idea/vcs.xml
++++ b/.idea/vcs.xml
+@@@ -1,6 -1,6 +1,10 @@@
+  <?xml version="1.0" encoding="UTF-8"?>
+  <project version="4">
+    <component name="VcsDirectoryMappings">
+++<<<<<<< HEAD
+ +    <mapping directory="" vcs="Git" />
+++=======
++     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+++>>>>>>> bug2
+    </component>
+  </project>
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   .idea/workspace.xml
+        modified:   SILab1.java
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      .idea/vcs.xml
+
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   .idea/workspace.xml
+        modified:   SILab1.java
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      .idea/vcs.xml
+
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout bug2
+error: you need to resolve your current index first
+.idea/vcs.xml: needs merge
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git merge --abort
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git merge bug2
+Auto-merging .idea/vcs.xml
+CONFLICT (add/add): Merge conflict in .idea/vcs.xml
+Auto-merging SILab1.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   .idea/workspace.xml
+        modified:   SILab1.java
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      .idea/vcs.xml
+
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   .idea/workspace.xml
+        modified:   SILab1.java
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      .idea/vcs.xml
+
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git add .
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>master merge bug2
+'master' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git merge bug2
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git commit -m "Solving merge"
+[master 5859639] Solving merge
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git merge bug2
+Already up to date.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git branch
+  bug1
+  bug2
+  bug3
+* master
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push -u origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 544 bytes | 544.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/ddamjanp/SI_2023_lab1_213249.git
+To https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+   f72dc21..5859639  master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout bug3
+Switched to branch 'bug3'
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>branch
+'branch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git branch
+  bug1
+  bug2
+* bug3
+  master
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git fetch origin
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git rebase origin/master
+Auto-merging .idea/workspace.xml
+CONFLICT (add/add): Merge conflict in .idea/workspace.xml
+Auto-merging SILab1.java
+error: could not apply 6a13dfd... Fix method sumEvenNumbers.
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 6a13dfd... Fix method sumEvenNumbers.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+interactive rebase in progress; onto 5859639
+Last command done (1 command done):
+   pick 6a13dfd Fix method sumEvenNumbers.
+No commands remaining.
+You are currently rebasing branch 'bug3' on '5859639'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   SILab1.java
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both added:      .idea/workspace.xml
+
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git add .
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git commit
+[detached HEAD e3bbeb7] Fix method sumEvenNumbers.
+ 2 files changed, 6 insertions(+), 3 deletions(-)
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git rebase --continue
+Successfully rebased and updated refs/heads/bug3.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug3
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push -u origin
+fatal: The current branch bug3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug3
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push --set-upstream origin bug3
+To https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+ ! [rejected]        bug3 -> bug3 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ddamjanp/-SI_2023_lab1_213249.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git pull origin bug3
+From https://github.com/ddamjanp/-SI_2023_lab1_213249
+ * branch            bug3       -> FETCH_HEAD
+Auto-merging .idea/workspace.xml
+CONFLICT (add/add): Merge conflict in .idea/workspace.xml
+Auto-merging SILab1.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout master
+error: you need to resolve your current index first
+.idea/workspace.xml: needs merge
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git merge --abort
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git status
+On branch bug3
+nothing to commit, working tree clean
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push -u origin
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git merge bug3
+Updating 5859639..e3bbeb7
+Fast-forward
+ .idea/workspace.xml | 5 ++++-
+ SILab1.java         | 4 ++--
+ 2 files changed, 6 insertions(+), 3 deletions(-)
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git push -u origin
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 548 bytes | 548.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/ddamjanp/SI_2023_lab1_213249.git
+To https://github.com/ddamjanp/-SI_2023_lab1_213249.git
+   5859639..e3bbeb7  master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>
+

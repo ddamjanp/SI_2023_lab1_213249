@@ -1,0 +1,88 @@
+3-6. 
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/ddamjanp/SI_2023_lab1_213249.git
+git push -u origin master
+
+7. git commit -m "Add java class" комит во локално репо
+
+8. git push -u origin master синхронизација со ремоут репо
+
+9.
+git branch bug1 додавање на нови гранки на мастерот
+git branch bug2
+git branch bug3
+
+10. git checkout bug1 -Поместување на гранката bug1 во локалното репо
+Switched to branch 'bug1'
+
+git status  - за проверка дали сум во соодветниот branch
+On branch bug1
+nothing to commit, working tree clean
+
+11.
+git status - Проверка дали фајлот е модифициран и дали има проблеми
+
+git add . -  Додавање на сите модифицирани и untracked фајлови на сцена
+
+C:\Users\DG\Desktop\SI_2023_lab1_213249>git commit -m "Fix wrong loop for reading" - правење снепшот од промената
+
+
+
+12.git checkout bug2
+
+13. 
+git status - Проверка дали фајлот е модифициран и дали има проблеми
+
+git add . -  Додавање на сите модифицирани и untracked фајлови на сцена
+
+git commit -m " Fix wrong condition in filterOddNumbers." 
+
+
+14. git checkout bug3
+
+
+
+15.
+git status - Проверка дали фајлот е модифициран и дали има проблеми
+
+git add . -  Додавање на сите модифицирани и untracked фајлови на сцена
+
+git commit -m "Fix method sumEvenNumbers.
+
+
+16. 
+git checkout bug1/bug2/bug3
+git push origin bug1/bug2/bug3 додавање на гранките во ремоут репото
+
+17. git checkout master
+
+18. git merge bug1
+Fast-forward
+	немаше проблеми при mergeot бидејќи немаше други commits и гранката имаше кај да си се вметне
+
+19. Направив грешка што направив merge на bug1 i bug2, заборавив да направам merge odma posle bug1
+
+20. 	При обид да направам git merge bug1 се појави грешка во еден фајл, конкретно .idea/vcs.xml
+	го најдов фајлот во директориумот и го отворив како txt датотека и го изменив тоа што се наоѓаше во head
+	направив git add . што ги става на сцена сите модицириани фајлови и поставив commit којшто го крстив solving 	merge.
+	после тоа mergeot na master беше успешен
+
+
+21.git push -u origin master
+
+
+22-26.
+
+	git checkout bug3 јасно ни е веќе што прави
+	за секој случај, според конценција правам git getch origin за проверка дали
+ 	случајно „некој“ има направено промена
+	При обид за git rebase origin/master, се јави конфликт сличен како и 
+	претходниот, т.ш го решив исто така мануелно.
+	При промената правам адд и комит заради самата промена на фајлот и откако е 
+	решен конфликтот продолжувам со rebase. 
+	Се враќам на master бренчот правам merge so bug3 и го прикачувам во remote repo
+
+27.
